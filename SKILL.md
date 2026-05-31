@@ -1,19 +1,11 @@
 ---
 name: cicd-pipeline-management
 description: Orchestrate CI/CD pipelines — check build status, view logs, download artifacts, rerun workflows, trigger deployments, and manage release gates. Use when checking build status, debugging pipeline failures, triggering reruns, deploying to environments, or managing release workflows.
-version: "1.0.0"
 license: Apache-2.0
-allowed-tools:
-  - list_pipeline_runs
-  - get_pipeline_run
-  - get_pipeline_logs
-  - rerun_pipeline
-  - list_artifacts
-  - get_deployment_status
-  - trigger_deployment
-  - cancel_pipeline
-tags: [devops, cicd, pipelines, deployment, builds]
+compatibility: Requires mcp-cicd server connected.
+allowed-tools: [list_pipeline_runs, get_pipeline_run, get_pipeline_logs, rerun_pipeline, list_artifacts, get_deployment_status, trigger_deployment, cancel_pipeline]
 metadata:
+  category: engineering
   author: Zavora AI
   mcp-server: mcp-cicd
   revenue-impact: indirect
